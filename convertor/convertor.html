@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form action="">
+        <h1>Temperature conversion</h1>
+        <input type="number" name="" id="textBox" value="0" />
+
+        <div class="ctoF">
+          <input type="radio" name="unit" id="toF" />
+          <label for="toF">Celsius ➡️ Fahrenheit</label>
+        </div>
+
+        <div class="ftoC">
+          <input type="radio" name="unit" id="toC" />
+          <label for="toC">Fahrenheit ➡️ Celsius</label>
+        </div>
+
+        <button type="button" id="btn">Submit</button>
+      </form>
+      <p id="result">Result</p>
+    </div>
+  </body>
+  <script src="convertor.js"></script>
+</html>
