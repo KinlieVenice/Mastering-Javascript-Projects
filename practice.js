@@ -1,10 +1,12 @@
-function ifTrue(array){
-    return array.every(x => x > 0) 
+const p = document.querySelector("p");
+p.innerText.split("");
+
+function hl8Char() {
+  for (let i = 0; i < p.length; i++) {
+    if (p[i].length === 8) {
+      p[i].style.backgroundColor = "yellow";
+    }
+  }
 }
 
-console.log(ifTrue([1,2,3,4,5]))
-
-// const getRandomHex = () =>
-//     '#' + Array.from({length: 6}).map(getHex).join('');
-
-// console.log(getRandomHex());
+hl8Char();
